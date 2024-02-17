@@ -1,0 +1,138 @@
+.h2o-main-slider {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+
+  @include small-tablet{
+    width: calc(100% + (var(--container-offset) * 2));
+    margin-left: calc(var(--container-offset) * -1);
+  }
+
+  &__wrapp{
+   @include small-tablet{
+    padding: 0 var(--container-offset);
+   }
+  }
+
+  &__slide{
+    @include small-tablet{
+      padding: 0 var(--container-offset);
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 2.1552vw, 2.1552vw);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 2.1552vw, 2.1552vw);
+    padding: 40px 0 0 40px;
+    width: 100%;
+    max-width: Min(36.2069vw, 420px);
+    box-sizing: content-box;
+    z-index: 5;
+
+    @include tablet{
+      padding-top: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include mobile{
+      align-items: center;
+      padding: 0;
+      max-width: 240px;
+      left: 50%;
+      bottom: 0;
+      top: initial;
+      transform: translate(-50%, 0%);
+
+
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: clamp(16px, 2.5862vw, 30px);
+    font-family: serif;
+    text-align: start;
+    color: rgba(var(--cl-a), 1);
+    font-weight: 700;
+    font-family: var(--font-family);
+    line-height: 1.4;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+    @include mobile{
+      text-align: center;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(15px, 2.1552vw, 25px);
+
+    @include mobile{
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    font-size: clamp(14px, 1.3793vw, 16px);
+    line-height: 1.4;
+    color: rgba(var(--cl-d), 1);
+    font-weight: 400;
+    font-family: var(--font-family);
+  }
+
+  .h2o-green-button {
+    width: fit-content;
+  }
+
+ 
+
+  &__image {
+    width: 100%;
+    height: 320px;
+
+    img,
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include mobile {
+      height: 360px;
+    }
+  }
+
+  .splide {
+    &__pagination {
+      right: 40px;
+      bottom: 25px;
+      padding: 0;
+      justify-content: flex-end;
+      &__page {
+        background: rgba(var(--bg-a), 0.5);
+        height: clamp(10px, 1.1207vw, 13px);
+        width: clamp(10px, 1.1207vw, 13px);
+        opacity: 1;
+
+        &.is-active {
+          transform: none;
+          background: rgba(var(--bg-a), 1);
+        }
+      }
+    }
+  }
+}

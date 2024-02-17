@@ -1,0 +1,9 @@
+.h2o-games-section{
+    padding-bottom: 25px;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+}

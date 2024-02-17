@@ -1,0 +1,22 @@
+.h2o-footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: clamp(10px, 2.4194vw, 30px);
+    flex-wrap: wrap;
+
+    &__link{
+        align-items: center;
+        color: rgba(var(--cl-e),1.0);
+        display: flex;
+        font-family:var(--font-family);
+        font-size: clamp(14px, 1.2903vw, 16px);
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: color .3s ease;
+
+        &:hover{
+            color: rgba(var(--cl-c),1.0);
+        }
+    }
+}

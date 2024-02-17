@@ -1,0 +1,46 @@
+@mixin overlay {
+  position: fixed;
+  height: 100%;
+  right: 440px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  overflow-y: scroll;
+
+  background: rgba(var(--bg-b), 0.32);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .4s cubic-bezier(.25,.8,.25,1);
+  transition-delay: 0.5s;
+
+  pointer-events: none;
+
+  @include for-tablet{
+    right: 320px;
+}
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.active {
+    z-index: 90;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+    visibility: visible;
+    opacity: 1;
+
+    // transition: all 0.6s;
+
+    pointer-events: initial;
+  }
+}
+
+.h2o-overlay {
+  @include overlay;
+}

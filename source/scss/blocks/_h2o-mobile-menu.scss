@@ -1,0 +1,34 @@
+.h2o-mobile-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transform: translateX(230%);
+    transition: all 0.4s ease-out;
+    width: 100%;
+    max-width: 440px;
+    height: 100%;
+    overflow-y: auto;
+    padding: 35px 30px 15px 30px;
+    background-color: rgba(var(--bg-a),1.0);
+
+    @include for-tablet{
+        max-width: 320px;
+    }
+
+   &__box{
+    grid-gap: 15px;
+    display: flex;
+    flex-direction: column;
+   } 
+
+   .h2o-burger{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+   }
+   
+    &.active {
+        transform: translateX(0);
+    }
+}

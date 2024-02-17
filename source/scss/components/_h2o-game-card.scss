@@ -1,0 +1,80 @@
+.h2o-game-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+
+    &:hover{
+       .h2o-game-card{
+        &__image{
+            img,picture{
+                transform: scale(1.2);
+            }
+        }
+        &__wrapp{
+        opacity: 1;
+        visibility: visible;
+       }
+    } 
+    }
+
+    &__btn{
+        inset: 0;
+        position: absolute;
+        z-index: 20;
+    }
+
+    &__wrapp{
+        transition: all .4s;
+        opacity: 0;
+        visibility: hidden;
+        padding: 10px;
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 12px;
+        background-color: rgba(var(--bg-b),.7);
+    }
+  
+
+    &__image{
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+     
+        img{
+            transition: all .4s;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__link{
+        font-family: var(--font-family);
+        text-align: center;
+        color: rgba(var(--cl-c),1.0);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    &__title{
+        font-family: var(--font-family);
+        color: rgba(var(--cl-a),1.0);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: center;
+    }
+}

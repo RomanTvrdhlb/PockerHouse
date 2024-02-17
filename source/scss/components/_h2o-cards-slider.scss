@@ -1,0 +1,109 @@
+.h2o-cards-slider{
+    width: calc(100% - 124px);
+    align-self: center;
+    margin-left: 2px;
+
+    @include small-tablet{
+        width: calc(100% + (var(--container-offset) * 2));
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    &__box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wrapp{
+        padding-right: 2px !important;
+
+        @include small-tablet{
+            padding:0 var(--container-offset) !important;
+        }
+    }
+
+    &__slide{
+
+        @include small-tablet{
+
+        &:first-child{
+            border-radius: 6px 0 0 6px;
+            overflow: hidden;
+        }
+
+        &:last-child{
+            overflow: hidden;
+            border-radius: 0 6px 6px 0;
+        }
+                    
+    }
+    }
+
+    &__btn{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(var(--bg-a),.08);
+        transition: all .4s;
+        &:hover{
+            background-color: rgba(var(--bg-a),.15);
+        }
+    }
+
+    .splide{
+
+        &__arrows{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: calc(100% + 122px);
+
+        
+        }
+
+        &__arrow{
+            width: 61px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(var(--bg-a),.08);
+            opacity: 1;
+            transform: none;   
+            top: 0;  
+
+            &:hover{
+                background-color: rgba(var(--bg-a),.15);
+            }
+
+            &--prev{
+                left: -2px;
+                border-radius: 15px 0 0 15px;
+            }
+
+            &--next{
+                border-radius: 0 15px 15px 0;
+                right: 0px;
+              
+                   
+            }
+
+            svg{
+                fill: rgba(var(--cl-a),1);  
+            }
+
+            &:disabled{
+                svg{
+                    fill: rgba(var(--cl-b),1);  
+                }  
+            }
+        }
+    }
+}

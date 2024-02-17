@@ -1,0 +1,57 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #f5f5f5;
+  --body-font-size: 16px;
+  --content-width: 1160px;
+  --content-width-mode: 1200px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  @include small-tablet{
+    --container-offset: 16px;
+  }
+  // --------------- default JS variable ---------------
+    --header-height: 154px;
+
+    @include tablet{
+      --header-height: 144px;
+    }
+
+    @include small-tablet{
+      --header-height: 130px;
+    }
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: #00000045;
+  --scrollbar-track:  #f5f5f5;
+  --scrollbar-track-hover: #f5f5f5;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default font-family variable ---------------
+  --font-family: "Circe" , sans-serif; // var(--font-family);
+
+// --------------- default text color variable ---------------
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#999)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#2ecc71)}; // rgba(var(--cl-d),1.0);
+
+// --------------- default background color variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#2ecc71)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#4dd486)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#999999)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#eee)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#f04f4f)}; // rgba(var(--bg-g),1.0);
+
+// --------------- default border color variable ---------------
+  --br-a: #202020; // var(--br-a);
+  --br-b: #999; // var(--br-b);
+  --br-c: #fff; // var(--br-c);
+  --br-d: #ff9d42; // var(--br-d);
+}

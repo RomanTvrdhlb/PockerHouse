@@ -1,0 +1,351 @@
+.h2o-icon {
+  &-logo {
+    width: 168px;
+    height: 30px;
+    display: block;
+    background-image: url(../img/sprite/logo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include small-tablet{
+      width: 30px;
+      background-image: url(../img/sprite/logoMob.svg);
+    }
+  }
+
+  &-fire {
+    width: clamp(30px, 3.1034vw, 36px);
+    height: clamp(30px, 3.1034vw, 36px);
+    display: block;
+    background-image: url(../img/sprite/fire.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-home {
+    width: 14px;
+    height: 13px;
+    display: block;
+    background-image: url(../img/sprite/home.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-star {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/star.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &-reward {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/reward.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &-cup {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/cup.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &-faq {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/faq.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  
+  &-news {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/news.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  
+  &-casino {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/casino.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &-cube {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/cube.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &-lemon {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/lemon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &-plane {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/plane.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &-card {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/card.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  
+  &-poker {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/poker.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  
+  &-ball {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/ball.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  
+  &-scratch {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(../img/sprite/scratch.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-ms {
+    width: 59px;
+    height: 39px;
+    display: block;
+    background-image: url(../img/sprite/icon1.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-visa {
+    width: 53px;
+    height: 34px;
+    display: block;
+    background-image: url(../img/sprite/visa.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-monetix {
+    width: 96px;
+    height: 14px;
+    display: block;
+    background-image: url(../img/sprite/icon2.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-mir {
+    width: 59px;
+    height: 16px;
+    display: block;
+    background-image: url(../img/sprite/icon3.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-cbp {
+    width: 53px;
+    height: 32px;
+    display: block;
+    background-image: url(../img/sprite/icon4.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-btc {
+    width: 75px;
+    height: 22px;
+    display: block;
+    background-image: url(../img/sprite/icon5.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-vtb {
+    width: 111px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/sprite/icon6.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include small-tablet{
+      width: 90px;
+    }
+  }
+
+  &-spino {
+    width: 91px;
+    height: 16px;
+    display: block;
+    background-image: url(../img/sprite/icon8.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-playson {
+    width: 91px;
+    height: 16px;
+    display: block;
+    background-image: url(../img/sprite/icon9.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-bgaming {
+    width: 96px;
+    height: 17px;
+    display: block;
+    background-image: url(../img/sprite/icon10.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include small-tablet{
+      width: 90px;
+    }
+  }
+  &-relax {
+    width: 66px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/sprite/icon11.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-endorph {
+    width: 60px;
+    height: 27px;
+    display: block;
+    background-image: url(../img/sprite/icon13.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-nolimit {
+    width: 68px;
+    height: 19px;
+    display: block;
+    background-image: url(../img/sprite/icon14.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-quick {
+    width: 64px;
+    height: 14px;
+    display: block;
+    background-image: url(../img/sprite/icon15.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-oaks {
+    width: 84px;
+    height: 14px;
+    display: block;
+    background-image: url(../img/sprite/icon16.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-amatic {
+    width: 66px;
+    height: 15px;
+    display: block;
+    background-image: url(../img/sprite/icon17.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-only {
+    width: 68px;
+    height: 15px;
+    display: block;
+    background-image: url(../img/sprite/icon18.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-age {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url(../img/sprite/18.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

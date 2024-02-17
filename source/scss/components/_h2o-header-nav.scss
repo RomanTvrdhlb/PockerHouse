@@ -1,0 +1,38 @@
+.h2o-header-nav {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  grid-gap: 15px;
+  overflow-x: auto;
+
+  @include small-tablet{
+    width: calc(100% + (var(--container-offset) * 2));
+    margin-left: calc(var(--container-offset) * -1);
+    padding: 0 var(--container-offset);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    align-items: center;
+    color: rgba(var(--cl-c),1.0);
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.4;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.3s;
+
+    &:hover {
+      color: rgba(var(--cl-b), 1);
+    }
+  }
+}
