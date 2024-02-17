@@ -52,6 +52,39 @@
   }
 }
 
+.h2o-contacts{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+
+  &__btn{
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    background: rgba(var(--bg-a),.08);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: all .4s;
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+    color: rgba(var(--cl-c),1.0);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    min-height: 52px;
+
+    &:hover{
+      color: rgba(var(--cl-a),1.0);
+      background: rgba(var(--bg-a),.15);
+    }
+
+    @include small-tablet{
+      margin: 0;
+    }
+  }
+}
+
 .h2o-main-subtitle {
     font-family: var(--font-family);
     color: rgba(var(--cl-c), 1);
@@ -126,8 +159,6 @@ ul:not([class]) {
     }
   }
 }
-
-
 
 table:not([class]){
     width:100%;

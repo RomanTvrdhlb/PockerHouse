@@ -8,9 +8,6 @@ const cardsSliders = document.querySelectorAll(".h2o-cards-slider");
 const accParrent = [...document.querySelectorAll("[data-accordion-init]")];
 const htmlEl = document.documentElement;
 const bodyEl = document.body;
-
-
-
 //------------------------------------------------
 
 //----customFunction------------------------------
@@ -283,5 +280,4 @@ function stickyHeaderFunction(breakpoint){
 
 stickyHeaderFunction(320);
 elementHeight(header, "header-height");
-
 //----------------------------------------------

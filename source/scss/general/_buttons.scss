@@ -64,3 +64,17 @@
     background-color: rgba(var(--bg-e),.15);
   }
 }
+
+.h2o-info-button{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(var(--bg-a),.15);
+  border-radius: 50%;
+  transition: all .4s;
+  &:hover{
+    background: rgba(var(--bg-a),.3);
+  }
+}

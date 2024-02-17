@@ -1,6 +1,7 @@
 footer{
   background-color: rgba(var(--bg-b),1.0);
   padding: clamp(30px, 4.3103vw, 50px) 0;
+  overflow: hidden;
 }
 
 .h2o-footer{
@@ -12,7 +13,15 @@ footer{
 
   &__top{
     display: flex;
-    grid-gap: clamp(10px, 1.6129vw, 20px);
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 50px 0 0;
+    min-width: auto;
+    width: 100%;
+
+    @include small-tablet{
+      flex-direction: column;
+    }
   }
   
   &__box{
@@ -28,13 +37,16 @@ footer{
     color: rgba(var(--cl-a),1.0);
     font-weight: 400;
     font-family: var(--font-family);  
+
+    @include small-tablet{
+      margin-top: 15px;
+    }
   }
 
   &__nav{
     display: flex;
     flex-direction: column;
     grid-gap: 15px;
-
 
     .h2o-menu-list{
       padding: 0;
@@ -46,6 +58,33 @@ footer{
       &__link{
         color: rgba(var(--cl-c),1.0);
         text-transform: capitalize;
+
+        &:hover{
+          color: rgba(var(--cl-a),1.0);
+        }
+
+        @include small-tablet{
+          width: 100%;
+        }
+      }
+    }
+
+    @include small-tablet{
+      width: 100%;
+     
+    
+      &:not(:last-child){
+        position: relative;
+        &::before{
+          position: absolute;
+          content: '';
+          width: 100vw;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          border-bottom: solid 1px var(--br-e);
+        }
+        
       }
     }
   }

@@ -34,7 +34,7 @@
     background-size: contain;
   }
 
-  &-star {
+  &-shares {
     width: 26px;
     height: 26px;
     display: block;
@@ -280,6 +280,82 @@
     height: 20px;
     display: block;
     background-image: url(../img/sprite/icon11.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-support {
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-image: url(../img/sprite/support.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: rgba(var(--bg-a),.15);
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      transform: translate(-17%, -16%);
+    }
+  }
+  &-partner {
+    top: -1px;
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-image: url(../img/sprite/partner.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: rgba(var(--bg-a),.15);
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      transform: translate(-17%, -12%);
+    }
+  }
+  &-star {
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-image: url(../img/sprite/star2.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: rgba(var(--bg-a),.15);
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      transform: translate(-23%, -22%);
+    }
+  }
+  &-tg {
+    width: 20px;
+    height: 17px;
+    display: block;
+    background-image: url(../img/sprite/tg.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;

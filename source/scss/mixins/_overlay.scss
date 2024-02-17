@@ -17,7 +17,7 @@
 
   pointer-events: none;
 
-  @include for-tablet{
+  @include for-mobile{
     right: 320px;
 }
 
